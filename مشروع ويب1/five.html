@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" >  
+<meta name="keywords" content="HTML, , animation  of div">
+<meta name="description" content=" background img,animation  of div">   
+    <link  rel="stylesheet"type="text/css" href="c.css">
+
+ <title>Animation</title>
+      <style type = "text/css">
+	  .div {
+	  position:relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+width:300px;
+height: 150px;
+border-radius: 50%;
+background-color: #1F3A93;
+box-shadow: inset 1px 1px 100px #444,inset 10px 10px 10px #333,2px 2px #222;
+ animation: movingimage linear 10s 1s 2 alternate;
+}
+
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+		 .start{background-color:#1F3A93;color:bisque;Text-align:center;font-size: 30px;padding: 3px}
+		body{ background-image :url(2jpg.jpg);background-repeat: no-repeat;}
+      </style>
+   </head>
+   <body>
+     <header>
+    <ul class="navigation">
+      <li><a  href="index.html">Home</a></li>
+      <li><a href="two.html" >About me</a></li>
+      <li><a href="three.html"  >my profile</a></li>
+      <li><a href="four.html" >Form</a></li>
+        <li><a href="five.html" class="ac">Start Here</a></li>
+    </ul>
+	
+  </header>
+<div class=div>
+<h1 class=start>Hi I&apos;m Youmna </h1>  </div> 
+      
+   </body>
+</html>

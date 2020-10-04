@@ -1,0 +1,224 @@
+body{
+background-color: #eee;
+font-family: sans-serif;
+
+}
+
+.block2{
+width:400;
+float:left;
+margin-left:50px;
+font-size:20px;
+width:25%;
+font-family: sans-serif;
+
+}
+h1{font-family:cursive;}
+h2{font-family:monospace;color: darkslateblue}
+a{color: cadetblue;}
+li{list-style-type: circle}
+.buttun{background-color:#4183D7;color: aliceblue;font-size:14px;
+border-radius:3px;text-decoration:none;display:inline block;padding:15px;margin-bottom:15px;}
+
+
+.header1{
+    font-size: x-large;font-family: serif;font-weight: bold;color: #1befef;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#16222A;  /* fallback for old browsers */
+background: -webkit-radial-gradient(#3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background:radial-gradient( #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+.bb{background: :#16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); }/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.cen{font-size:100px;color:#2C3E50;Text-align:center;font-family: monospace;color:#22313F;text-shadow: -6px -6px 6px #3498DB;}
+h1.contact{font-size:100px;Text-align:center;font-family: monospace;background-color: black;width: 100%;color: aliceblue;margin:0px;padding:0px}
+
+.i{
+font-weight:bold; color:#22313F;
+
+
+}
+.cont{
+color:#6C7A89
+
+
+
+}
+.navigation{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ 
+  color: white;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:center;
+background-color: #ccc;
+
+}
+.yumyum{ font-size:5em;font-style: italic;font-family:serif;color:#403C37;text-align:left; text-shadow: 4px 4px 6px dimgrey}
+ul a{
+  margin:10px;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+color:white;
+}
+li a.ac,a:hover {
+    color:black;
+    background-color:white;
+
+}
+/*thead #grad1 {
+    height: 150px;
+    width: 200px;
+    background: red; /* For browsers that do not support gradients */    
+  /*  background: -webkit-radial-gradient(red, yellow, green); /* Safari 5.1 to 6.0 */
+   /* background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */
+  /*  background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+  /*  background: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */
+/*}*/
+
+
+
+

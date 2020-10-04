@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" > 
+<meta name="keywords" content="HTML, , form about informarmation of user">
+<meta name="description" content=" name , email,password,message">  
+   <link  rel="stylesheet"type="text/css" href="c.css">
+       
+       
+       <style>
+	     input {
+ height:10px;
+border-radius: 5px;
+outline: none;
+text-shadow: none;
+font-size: 20px;
+padding: 10px;
+margin:5px;
+
+  }
+  textarea{margin:5px;}
+  .submit{
+    {background-color:#4183D7;color: aliceblue;font-size:14px;
+border-radius:3px;text-decoration:none;display:inline block;padding:15px;margin-bottom:10px;}
+
+
+	   </style>
+       
+    
+</head>
+<body >
+  <header>
+    <ul class="navigation">
+      <li><a  href="index.html">Home</a></li>
+      <li><a href="two.html" >About me</a></li>
+      <li><a href="three.html"  >my profile</a></li>
+      <li><a href="four.html" class="ac">Form</a></li>
+        <li><a href="five.html">Start Here</a></li>
+    </ul>
+	
+  </header>
+<h1  class="contact">
+ Contact</h1> <br><br>
+ <form method = "post" action = "http://www.deitel.com" id="random">
+         How much passWords do you want to genrate:<br> <input type="number" name="nm" pattern=".{1,} "id="n"  ><br><br>
+        <input type="button" onclick="setCount()" value="Submit" class="buttun"><br>
+<label> Your Name(required)<br>
+<input type = "text" name = "text" required><br><br>
+  <label> Your Email(required)<br>
+<input type = "email" name = "text" required> <br><br>    
+<label> Password<br>
+<input type = "password" name = "text">      
+ <p><label>Your message<br>
+<textarea name = "message"
+rows = "16" cols = "100">
+</textarea>
+</label></p><br>
+<input type="submit" class="buttun" value="Send">
+               
+      </form>
+
+
+    <script>
+
+        function setCount() {
+            var number = document.getElementById("n").value
+            var i = 0;
+
+
+            if (number > 10) {
+                alert("This could take to much time . do you want to contunie : (y/n)");
+
+                var ans = '';
+                ans = prompt("y for Yes and n for No");
+                switch (ans) {
+                    case 'y':
+                        while (i != number) {
+                            alert("Your PassWord is :" + getPassword());
+                            i++;
+                        }
+                        break;
+                    case 'no':
+                        return;
+
+
+                }
+            }
+            else if (number < 10&& number >0) {
+
+            while (i != number) {
+                alert("Your PassWord is :" + getPassword());
+                i++;
+            }
+
+        }
+        else
+                alert("Wrong Input");
+          }
+        function getPassword() {
+            var passWord="" ;
+            var letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()<>/:"
+
+                for(var j=0 ; j<9 ; j++)
+                passWord+=letters.charAt(Math.random() * letters.length);
+
+
+            return passWord;
+        }
+
+    </script>
+
+</div>
+	  
+   </body>
+</html>
